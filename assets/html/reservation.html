@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+    <title>Réservation</title>
+    <link rel="stylesheet" href="/assets/css/reservation.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+      
+     
+                      <!-- header Start-->      
+       <header>  
+              
+           
+        <nav>
+            <a href="/index.html"><img alt="logo" src="/assets/img/tour.png" id="logo"></a>
+               
+            <ul>
+                <li><a href="carte-menu.html">Carte et Menus</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="heritage.html">Héritage</a></li>                  
+                <li><a href="https://www.comptoirdelatour.com/fr/">E-Boutique</a></li>                  
+            </ul>
+        </nav>         
+        
+       </header>
+                                     
+                       <!-- header end-->
+       
+                       <!-- main Start-->            
+                        
+        <main>          
+            
+            <div class="tour parallax4">
+               <ul class="text-animation3 hidden">
+                <li>R</li>
+                <li>E</li>
+                <li>S</li>
+                <li>E</li>
+                <li>R</li>
+                <li>V</li>
+                <li>A</li>
+                <li>T</li>
+                <li>I</li>
+                <li>O</li>
+                <li>N</li>
+                
+            </ul>
+                
+                <button id="arrow4">
+                    <img alt="arrow" src="/assets/img/arrow.png">
+                </button>
+                                
+            </div>
+            
+    <section class="reserve">
+        <form>
+           <div class="identification">
+               <select name="civilité">
+                   <option value="Monsieur">M</option>
+                   <option value="Madame">Mme</option>
+                   <option value="Mademoiselle">Mlle</option>
+               </select>
+               <input type="text" placeholder="Nom de Famille" required="required"/> 
+               <input type="text" placeholder="Prénom" required="required"/> 
+           </div>
+           
+           <div class="contact">
+              <input type="email" placeholder="Email" required="required"/>
+              <input type="text" placeholder="Téléphone" required="required"/>
+           </div>
+           
+           <div class="coordonnées">
+              <input type="text" placeholder="Ville" required="required"/>
+              <input type="text" placeholder="Code Postal" required="required"/>
+              <input type="text" placeholder="Pays" required="required"/>
+           </div>
+           
+           <div class="horaire">
+              <input type="text" placeholder="Date" required="required" id="datepicker"/>
+               <input type="text" placeholder="Heure" required="required"/>
+           </div>
+           
+           <div class="invitation">
+                <p>Ajouter un couvert ?</p>
+            </div>
+            <div class="decision">
+                   <div>
+                  <input type="radio" id="radio01" class="yes" name="si_invite" />
+                  <label for="radio01"><span></span>Oui</label>
+                </div>
+
+                <div>
+                     <input type="radio" id="radio02" class="non" name="si_invite" />
+                     <label for="radio02"><span></span>Non</label>
+                </div>
+              </div>
+            
+            
+            <div class="asks">
+                    <textarea placeholder="Demandes particulières" required="required"></textarea>
+                </div>
+                <div class="send-btn">
+                    <button type="submit">Réserver</button>
+                </div>
+            
+        </form>
+    </section>            
+       </main>
+       
+                       <!-- main end--> 
+   
+   
+   
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(function() {
+        setTimeout(function() {
+            $('.text-animation3').removeClass('hidden');
+        }, 500);
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/assets/js/animate.js"></script>
+<script src="/assets/js/nav.js"></script>
+<script src="/assets/js/scroll.js"></script>
+<script src="/assets/js/reservation.js"></script>
+<script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+</script>   
+</body>
+</html>

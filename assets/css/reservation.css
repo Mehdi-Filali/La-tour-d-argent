@@ -1,0 +1,381 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+input[type=radio],
+select
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+/* Text Inputs
+
+        /* MAIN */
+
+.tour {
+    text-align: center;
+    
+}
+
+.tour ul{
+    list-style: none;
+}
+
+.tour li {
+    color: #fff;
+    font-family: "Playfair Display";
+    font-size: 30px;
+    display: inline-block;
+    
+}
+
+
+.parallax4 {
+    background: url(/assets/img/accueil.png);
+    height: 675px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 125px;
+    z-index: 5000;
+
+}
+
+nav #logo {
+    width: 71px;
+    margin: 14px 0px 0px 117px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    margin-top: 1%;
+    margin-left: 14%;
+    width: 100%;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    margin-left: 5%;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #38B2CE;
+}
+
+nav ul a:hover{
+    color: #000;
+    
+}
+
+.header-nav{
+    background: #FCB975;
+    color: white;
+    transition: 1s;    
+}
+
+#arrow4{        
+    border: 3px solid white;
+    border-radius: 100px;
+    background: none;
+    margin-top: 40%;
+    cursor: pointer;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{box-shadow: 0 0 0 0 rgba(255, 255, 255, .7), 0 0 0 0 rgba(255, 255, 255, .7);}
+    40%{box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 0 0 rgba(255, 255, 255, .7);}
+    80%{box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 10px 0 rgba(255, 109, 74,0);}
+    100%{box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 10px rgba(255, 109, 74,0);}
+}
+
+#arrow4 img{
+    width: 50%;
+    margin-top: 17%;
+}
+
+                /* ANIMATION TEXT */
+
+.text-animation3{
+list-style: none;
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translateX(-50%) translateY(-50%);
+width: 53%;
+}
+
+.text-animation3 li{
+display: inline-block;
+margin-right: 5px;
+font-family: sans-serif;
+font-weight: 300;
+font-size: 5em;
+color: #FCB975;
+opacity: 1;
+transition: all 2s ease;
+font-family: "Playfair Display";
+}
+
+.text-animation3 li:last-child{
+margin-right: 0;
+}
+
+.text-animation3.hidden{
+opacity: 0;
+}
+.text-animation3.hidden li:nth-child(1) { -webkit-transform: translateX(-200px) translateY(-200px);}
+.text-animation3.hidden li:nth-child(2) { -webkit-transform: translateX(20px) translateY(100px);}
+.text-animation3.hidden li:nth-child(3) { -webkit-transform: translateX(-150px) translateY(-80px);}
+.text-animation3.hidden li:nth-child(4) { -webkit-transform: translateX(10px) translateY(-200px);}
+.text-animation3.hidden li:nth-child(5) { -webkit-transform: translateX(-300px) translateY(200px);}
+.text-animation3.hidden li:nth-child(6) { -webkit-transform: translateX(20px) translateY(-20px);}
+.text-animation3.hidden li:nth-child(7) { -webkit-transform: translateX(30px) translateY(200px);}
+.text-animation3.hidden li:nth-child(8) { -webkit-transform: translateX(-200px) translateY(-200px);}
+.text-animation3.hidden li:nth-child(9) { -webkit-transform: translateX(20px) translateY(100px);}
+.text-animation3.hidden li:nth-child(10) { -webkit-transform: translateX(-150px) translateY(-80px);}
+.text-animation3.hidden li:nth-child(11) { -webkit-transform: translateX(10px) translateY(-200px);}
+
+            /* END ANIM */
+
+            
+            /* SECTION RESERVE  */
+.reserve{
+    height: 600px;
+    text-align: center;
+}
+
+.identification{
+    margin-top: 9%;
+    margin-bottom: 2%;
+}
+.identification select{
+    width: 5%;
+    height: 34px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 5px;
+}
+.identification input{
+    width: 25%;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+
+
+.contact{
+    margin-bottom: 2%;
+}
+
+.contact input:nth-child(1){
+    width: 408.9px;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+.contact input:nth-child(2){
+    width: 25%;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+
+.coordonnées{
+    margin-bottom: 2%;
+}
+
+.coordonnées input:nth-child(1){
+    width: 12%;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+.coordonnées input:nth-child(2){
+    width: 17.5%;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+.coordonnées input:nth-child(3){
+    width: 25%;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.horaire{
+    margin-bottom: 5%;
+}
+
+.horaire input:nth-child(1){
+    width: 30%;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+.horaire input:nth-child(2){
+    width: 25%;
+    height: 30px;
+    border: 1px solid #c5c5ca;
+    border-radius: 2px;
+    color: #4e4e56;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.invitation p{
+    font-family: "playfair display";
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+
+.decision{
+    width: 20%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "playfair display";
+}
+.decision input[type="radio"] {
+    margin: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  color: #292321;
+    cursor: pointer;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label span {
+    background-color: #fff;
+    border: 2px solid #292321;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #FCB975;
+}
+
+input[type="radio"] + label span, input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+            /* end */
+
+.asks textarea{
+    width: 57%;
+    height: 100px;
+    box-sizing: border-box;
+    font-family: "playfair display";
+    font-size: 18px;
+    padding: 8px 0px 0px 8px;
+    margin-bottom: 2%;
+}
+
+.send-btn button{
+    width: 10%;
+    height: 44px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-family: "playfair display";
+    font-size: 17px;
+    text-transform: uppercase;
+}

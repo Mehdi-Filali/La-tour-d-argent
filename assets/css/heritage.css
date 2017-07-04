@@ -1,0 +1,887 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 125px;
+    z-index: 5000;
+
+}
+
+nav #logo {
+    width: 71px;
+    margin: 14px 0px 0px 117px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    margin-top: 1%;
+    margin-left: 14%;
+    width: 100%;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    margin-left: 5%;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul a:hover{
+    color: #38B2CE;
+    
+}
+
+#arrow3{
+    
+    
+    border: 3px solid white;
+    border-radius: 100px;
+    background: none;
+    margin-top: 40%;
+    cursor: pointer;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{box-shadow: 0 0 0 0 rgba(255, 255, 255, .7), 0 0 0 0 rgba(255, 255, 255, .7);}
+    40%{box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 0 0 rgba(255, 255, 255, .7);}
+    80%{box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 10px 0 rgba(255, 109, 74,0);}
+    100%{box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 10px rgba(255, 109, 74,0);}
+}
+
+#arrow3 img {
+    width: 50%;
+    margin-top: 17%;
+}
+
+
+                /* MAIN */
+
+.tour {
+    text-align: center;
+    
+}
+
+.tour ul{
+    list-style: none;
+}
+
+.tour li {
+    color: #fff;
+    font-family: "Playfair Display";
+    font-size: 30px;
+    display: inline-block;
+    
+}
+
+.parallax3 {
+    background: url(/assets/img/Page-H%C3%A9ritage.jpg);
+    height: 675px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+            /* on scroll nav  */
+
+.header-nav{
+    background: #FCB975;
+    color: white;
+    transition: 1s;
+    
+}
+                /* ANIMATION TEXT */
+
+.text-animation2{
+list-style: none;
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translateX(-50%) translateY(-50%);
+width: 53%;
+}
+
+.text-animation2 li{
+display: inline-block;
+margin-right: 5px;
+font-family: sans-serif;
+font-weight: 300;
+font-size: 5em;
+color: #FCB975;
+opacity: 1;
+transition: all 2s ease;
+font-family: "Playfair Display";
+}
+
+.text-animation2 li:last-child{
+margin-right: 0;
+}
+
+.text-animation2.hidden{
+opacity: 0;
+}
+.text-animation2.hidden li:nth-child(1) { -webkit-transform: translateX(-200px) translateY(-200px);}
+.text-animation2.hidden li:nth-child(2) { -webkit-transform: translateX(20px) translateY(100px);}
+.text-animation2.hidden li:nth-child(3) { -webkit-transform: translateX(-150px) translateY(-80px);}
+.text-animation2.hidden li:nth-child(4) { -webkit-transform: translateX(10px) translateY(-200px);}
+.text-animation2.hidden li:nth-child(5) { -webkit-transform: translateX(-300px) translateY(200px);}
+.text-animation2.hidden li:nth-child(6) { -webkit-transform: translateX(20px) translateY(-20px);}
+.text-animation2.hidden li:nth-child(7) { -webkit-transform: translateX(30px) translateY(200px);}
+.text-animation2.hidden li:nth-child(8) { -webkit-transform: translateX(-200px) translateY(-200px);}
+.text-animation2.hidden li:nth-child(9) { -webkit-transform: translateX(20px) translateY(100px);}
+.text-animation2.hidden li:nth-child(10) { -webkit-transform: translateX(-150px) translateY(-80px);}
+.text-animation2.hidden li:nth-child(11) { -webkit-transform: translateX(10px) translateY(-200px);}
+.text-animation2.hidden li:nth-child(12) { -webkit-transform: translateX(-300px) translateY(200px);}
+.text-animation2.hidden li:nth-child(13) { -webkit-transform: translateX(-400px) translateY(200px);}
+
+
+            /* END ANIM */
+
+
+        /* First CEO  */
+
+.terrail{
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    padding-top: 4%;
+    z-index: 2000;
+}
+
+.andré1{   
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    text-align: center;
+}
+
+.andré1 img{
+    clip-path: polygon(5% 0%, 95% 0%, 78% 100%, 22% 100%);
+    width: 101%;
+    height: 560px;
+    margin-left: 6%;
+}
+
+.andré1 p{
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.description-andré1{
+    width: 80%;
+    height: 111px;
+    background: #04819E;
+    color: white;
+    font-family: "Playfair Display";
+    text-align: center;
+    font-size: 15px;
+    line-height: 180%;
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    display: none;
+}
+
+.terrail p:hover{
+    color: #FCB975;
+}
+
+.claude{    
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+    text-align: center;    
+}
+
+.claude img{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    width: 100%;
+    margin-left: 2%;
+}
+
+.claude p{
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.description-claude{
+    width: 80%;
+    height: 140px;
+    background: #04819E;
+    color: white;
+    font-family: "Playfair Display";
+    text-align: center;
+    font-size: 15px;
+    line-height: 180%;
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    display: none;
+}
+
+.andré2{    
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+}
+
+.andré2 img{
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+    width: 83%;
+    margin-right: 11%;
+}
+
+.andré2 p{
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.description-andré2{
+    width: 80%;
+    height: 140px;
+    background: #04819E;
+    color: white;
+    font-family: "Playfair Display";
+    text-align: center;
+    font-size: 15px;
+    line-height: 180%;
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    display: none;
+}
+
+.name-one{
+    font-size: 30px;
+    font-family: "Playfair Display";
+    color: black;    
+}
+.name-two{
+    font-size: 30px;
+    font-family: "Playfair Display";
+    color: black;    
+}
+.name-three{
+    font-size: 30px;
+    font-family: "Playfair Display";
+    color: black;    
+}
+
+.exit-description-one{
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;        
+}
+.exit-description-two{
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+.exit-description-three{
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+
+                /* end box */
+
+            /* HISTOIRE */
+#blason{
+    width: 5%;
+    margin: 1% 0% 0% 47.5%;
+}
+
+.histoire{
+    height: 700px;
+    background: #3D3E40;
+}
+
+.histoire h1 {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    color: #fff;
+    line-height: 120px;
+    text-transform: uppercase;
+}
+
+.dates{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.dates button{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    font-family: "Playfair Display";
+    font-size: 17px;
+    color: #FCB975;
+    line-height: 40px;
+    width: 9%;
+    cursor: pointer;
+}
+
+.dates button:hover{
+    background: #fff;
+    transition: 0.5s;
+    color: #F5D17F;
+}
+
+
+.first-btns{
+    margin-top: 8%;
+    margin-bottom: 4%;
+    }
+.second-btns{
+    margin-top: 4%;
+    }
+
+#fresque{
+    border: 2px solid #fff;
+    width: 80%;
+    margin: 2.58% 3% 2% 5%;
+    display: inline-block;
+    }
+
+.rotation{
+    position: absolute;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    display: inline-block;
+}
+
+            /* First btns */
+
+.one{
+    margin-left: 2%;
+    animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2{
+    0%{box-shadow: 0 0 0 0 rgba(255, 109, 74, .7), 0 0 0 0 rgba(255, 109, 74, .7);}
+    40%{box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 0 0 rgba(255, 109, 74, .7);}
+    80%{box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 10px 0 rgba(255, 109, 74,0);}
+    100%{box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 10px rgba(255, 109, 74,0);}
+}
+.two{
+    margin-left: 6%;
+}
+.three{
+    margin-left: 6%;
+}
+.four{
+    margin-left: 6%;
+}
+.five{
+    margin-left: 6%;
+}
+.six{
+    margin-left: 6%;
+}
+
+            /* second btns */
+
+.seven{
+    margin-left: 10%;
+}
+.height{
+    margin-left: 6%;
+}
+.nine{
+    margin-left: 6%;
+}
+.ten{
+    margin-left: 6%;
+}
+.eleven{
+    margin-left: 6%;
+}
+
+            /* PREAMBULE  */
+
+.préamb{
+    width: 90%;
+    height: 430px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 0% 0% 0% 3%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+    
+}
+
+.exit{
+    font-family: "Playfair Display";
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    transition: 1s;
+    float: left;
+    padding: 0% 0% 5% 0%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.exit:hover{
+    
+    color: black;
+    transition: 1s;
+}
+
+.préamb h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+    margin-right: 6%;
+}
+
+.préamb p{
+    color: #000;
+}
+.préamb img{
+    display: inline-block;
+    width: 33%;
+    margin: 3% 7% -2% 0%;
+}
+.préamb div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+
+
+            /* END PREAMBULE */
+
+
+            /* hostellerie */
+.hostel{
+    width: 88%;
+    height: 450px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 0% 0% 0% 4%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.hostel h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.hostel p{
+    color: #000;
+}
+.hostel img{
+    display: inline-block;
+    width: 18%;
+    margin: 3% 7% -2% 0%;
+}
+.hostel div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+            /* end hostellerie */
+
+            /* fourchettes */
+
+.fourches{
+    width: 93%;
+    height: 409px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.fourches h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.fourches p{
+    color: #000;
+}
+.fourches img{
+    display: inline-block;
+    width: 27%;
+    margin: 7% 10% -2% 2%;
+}
+.fourches div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+            /* end fourchettes */
+
+            /* traiteur cuisinier oyer  */
+
+.traiteur{
+    width: 93%;
+    height: 440px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.traiteur h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.traiteur p{
+    color: #000;
+}
+.traiteur img{
+    display: inline-block;
+    width: 27%;
+    margin: 7% 10% -2% 2%;
+}
+.traiteur div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+            /* end traiteur cuisinier oyer  */
+
+            /* DU CARDINAL DE RICHELIEU À LA RÉVOLUTION FRANÇAISE */
+
+.cardinal{
+    width: 93%;
+    height: 440px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.cardinal h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.cardinal p{
+    color: #000;
+}
+.cardinal img{
+    display: inline-block;
+    width: 31%;
+    margin: 7% 8% -2% 2%;
+}
+.cardinal div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+        /* end DU CARDINAL DE RICHELIEU À LA RÉVOLUTION FRANÇAISE */
+
+           /* LECOQ, CUISINIER PERSONNEL DE NAPOLÉON */
+
+.lecoq{
+    width: 93%;
+    height: 454px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.lecoq h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.lecoq p{
+    color: #000;
+}
+.lecoq img{
+    display: inline-block;
+    width: 19%;
+    margin: 4% 8% -11% 3%;
+}
+.lecoq div{
+    display: inline-block;
+    width: 35%;
+    line-height: 34px;
+}
+
+        /* end LECOQ, CUISINIER PERSONNEL DE NAPOLÉON */
+
+
+        /* LE DÎNER DES TROIS EMPEREURS AU CAFÉ ANGLAIS */
+
+.diner{
+    width: 89%;
+    height: 438px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 0% 0% 0% 3%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.diner h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.diner p{
+    color: #000;
+}
+.diner img{
+    display: inline-block;
+    width: 31%;
+    margin: 7% 8% -4% 2%;
+}
+.diner div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+        /* end LE DÎNER DES TROIS EMPEREURS AU CAFÉ ANGLAIS */
+
+        
+            /* FRÉDÉRIC DELAIR ET LE CANETON NUMÉROTÉ */
+
+.canneton{
+    width: 93%;
+    height: 440px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.canneton h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.canneton p{
+    color: #000;
+}
+.canneton img{
+    display: inline-block;
+    width: 31%;
+    margin: 3% 6% -6% 1%;
+}
+.canneton div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+        /* end FRÉDÉRIC DELAIR ET LE CANETON NUMÉROTÉ */
+
+            
+        /* LE CAFÉ ANGLAIS */
+
+.café{
+    width: 93%;
+    height: 430px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.café h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.café p{
+    color: #000;
+}
+.café img{
+    display: inline-block;
+    width: 31%;
+    margin: 7% 8% -4% 2%;
+}
+.café div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+        /* end LE CAFÉ ANGLAIS */
+
+        /* UN NOUVEAU DÉCOR */
+
+.décor{
+    width: 93%;
+    height: 430px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.décor h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.décor p{
+    color: #000;
+}
+.décor img{
+    display: inline-block;
+    width: 31%;
+    margin: 6% 7% -6% 2%;
+}
+.décor div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+        /* end UN NOUVEAU DÉCOR */
+
+        /* LA TOUR S’ÉLÈVE */
+
+.last{
+    width: 93%;
+    height: 430px;
+    font-family: "Playfair Display";
+    text-align: center;
+    background: #D7DBDD;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    display: none;
+}
+
+.last h2{
+    color: #FCB975;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.last p{
+    color: #000;
+}
+.last img{
+    display: inline-block;
+    width: 31%;
+    margin: 6% 7% -6% 2%;
+}
+.last div{
+    display: inline-block;
+    width: 49%;
+    line-height: 34px;
+}
+
+        /* end LA TOUR S’ÉLÈVE */
+
+/* FOOTER */
+
+footer{
+    height: 60px;
+    background: #FCB975;
+}
+
+#social{
+    padding: 1.5% 0% 0% 89%;
+}
+
+footer .facebook{
+    width: 8%;
+}
+
+.facebook:hover {
+    transform: rotate(360deg);
+    animation-duration: 1s;
+    
+    
+}
+
+footer img {
+    margin-left: 8%;
+}
