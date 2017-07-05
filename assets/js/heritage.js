@@ -1,19 +1,19 @@
             // show terrail
 $(document).ready(function(){
     $('.name-one').click(function(){
-        $('.description-andré1').show(1000);
+        $('.description-andré1').fadeIn(1500);
     });
 });
 
 $(document).ready(function(){
     $('.name-two').click(function(){
-        $('.description-claude').show(1000);
+        $('.description-claude').fadeIn(1500);
     });
 });
 
 $(document).ready(function(){
     $('.name-three').click(function(){
-        $('.description-andré2').show(1000);
+        $('.description-andré2').fadeIn(1500);
     });
 });
 
@@ -22,19 +22,19 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.exit-description-one').click(function(){
-        $('.description-andré1').hide(1000);
+        $('.description-andré1').fadeOut(1000);
     });
 });
 
 $(document).ready(function(){
     $('.exit-description-two').click(function(){
-        $('.description-claude').hide(1000);
+        $('.description-claude').fadeOut(1000);
     });
 });
 
 $(document).ready(function(){
     $('.exit-description-three').click(function(){
-        $('.description-andré2').hide(1000);
+        $('.description-andré2').fadeOut(1000);
     });
 });
 

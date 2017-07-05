@@ -208,7 +208,7 @@ opacity: 0;
 .description-andré1{
     width: 80%;
     height: 111px;
-    background: #04819E;
+    background: #FCB975;
     color: white;
     font-family: "Playfair Display";
     text-align: center;
@@ -245,7 +245,7 @@ opacity: 0;
 .description-claude{
     width: 80%;
     height: 140px;
-    background: #04819E;
+    background: #FCB975;
     color: white;
     font-family: "Playfair Display";
     text-align: center;
@@ -277,7 +277,7 @@ opacity: 0;
 .description-andré2{
     width: 80%;
     height: 140px;
-    background: #04819E;
+    background: #FCB975;
     color: white;
     font-family: "Playfair Display";
     text-align: center;
@@ -357,7 +357,7 @@ opacity: 0;
     border-radius: 7px;
     font-family: "Playfair Display";
     font-size: 17px;
-    color: #FCB975;
+    color: #fff;
     line-height: 40px;
     width: 9%;
     cursor: pointer;
